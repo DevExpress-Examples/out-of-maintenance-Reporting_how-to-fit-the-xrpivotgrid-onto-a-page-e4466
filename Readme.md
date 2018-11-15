@@ -1,3 +1,10 @@
+<!-- default file list -->
+*Files to look at*:
+
+* [WebForm1.aspx](./CS/WebSite/WebForm1.aspx)
+* [WebForm1.aspx.cs](./CS/WebSite/WebForm1.aspx.cs)
+* [XtraReport1.cs](./CS/WebSite/XtraReport1.cs)
+<!-- default file list end -->
 # How to fit the XRPivotGrid onto a page
 
 
