@@ -1,7 +1,7 @@
 <!-- default file list -->
 *Files to look at*:
 
-* [WebForm1.aspx](./CS/WebSite/WebForm1.aspx) (VB: [WebForm1.aspx.vb](./VB/WebSite/WebForm1.aspx.vb))
+* [WebForm1.aspx](./CS/WebSite/WebForm1.aspx) (VB: [WebForm1.aspx](./VB/WebSite/WebForm1.aspx))
 * [WebForm1.aspx.cs](./CS/WebSite/WebForm1.aspx.cs) (VB: [WebForm1.aspx.vb](./VB/WebSite/WebForm1.aspx.vb))
 * [XtraReport1.cs](./CS/WebSite/XtraReport1.cs) (VB: [XtraReport1.vb](./VB/WebSite/XtraReport1.vb))
 <!-- default file list end -->
