@@ -1,5 +1,5 @@
-<?xml version="1.0" encoding="utf-8"?>
-<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="4.0">
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="12.0">
   <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
@@ -12,11 +12,20 @@
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <RootNamespace>WebApplication1</RootNamespace>
     <AssemblyName>WebApplication1</AssemblyName>
-    <FileUpgradeFlags></FileUpgradeFlags>
-    <UpgradeBackupLocation></UpgradeBackupLocation>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
     <OldToolsVersion>3.5</OldToolsVersion>
-    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
     <UseIISExpress>false</UseIISExpress>
+    <TargetFrameworkProfile />
+    <Use64BitIISExpress />
+    <IISExpressSSLPort />
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+    <UseGlobalApplicationHostFile />
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <DebugSymbols>true</DebugSymbols>
@@ -26,6 +35,7 @@
     <DefineConstants>DEBUG;TRACE</DefineConstants>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
     <DebugType>pdbonly</DebugType>
@@ -34,64 +44,80 @@
     <DefineConstants>TRACE</DefineConstants>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="DevExpress.Charts.v13.1.Core, Version=13.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+    <Reference Include="DevExpress.Charts.v18.2.Core, Version=18.2.10.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
     </Reference>
-    <Reference Include="DevExpress.Printing.v13.1.Core, Version=13.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+    <Reference Include="DevExpress.Pdf.v18.2.Core, Version=18.2.10.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
     </Reference>
-    <Reference Include="DevExpress.Data.v13.1, Version=13.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+    <Reference Include="DevExpress.RichEdit.v18.2.Export, Version=18.2.10.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
     </Reference>
-    <Reference Include="DevExpress.Utils.v13.1, Version=13.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+    <Reference Include="DevExpress.Printing.v18.2.Core, Version=18.2.10.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
     </Reference>
-    <Reference Include="DevExpress.Web.ASPxPivotGrid.v13.1, Version=13.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+    <Reference Include="DevExpress.Data.v18.2, Version=18.2.10.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
     </Reference>
-    <Reference Include="DevExpress.Web.ASPxTreeList.v13.1, Version=13.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
-    <Reference Include="DevExpress.Office.v13.1.Core, Version=13.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+    <Reference Include="DevExpress.Utils.v18.2, Version=18.2.10.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
     </Reference>
-    <Reference Include="DevExpress.Docs.v13.1, Version=13.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+    <Reference Include="DevExpress.Web.ASPxPivotGrid.v18.2, Version=18.2.10.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
     </Reference>
-    <Reference Include="DevExpress.RichEdit.v13.1.Core, Version=13.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+    <Reference Include="DevExpress.Web.ASPxTreeList.v18.2, Version=18.2.10.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Office.v18.2.Core, Version=18.2.10.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
     </Reference>
-    <Reference Include="DevExpress.Web.v13.1, Version=13.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+    <Reference Include="DevExpress.Docs.v18.2, Version=18.2.10.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
     </Reference>
-    <Reference Include="DevExpress.XtraCharts.v13.1, Version=13.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+    <Reference Include="DevExpress.RichEdit.v18.2.Core, Version=18.2.10.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
     </Reference>
-    <Reference Include="DevExpress.XtraPivotGrid.v13.1, Version=13.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+    <Reference Include="DevExpress.Web.v18.2, Version=18.2.10.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
     </Reference>
-    <Reference Include="DevExpress.PivotGrid.v13.1.Core, Version=13.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+    <Reference Include="DevExpress.XtraCharts.v18.2, Version=18.2.10.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
     </Reference>
-    <Reference Include="DevExpress.XtraPrinting.v13.1, Version=13.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+    <Reference Include="DevExpress.XtraPivotGrid.v18.2, Version=18.2.10.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
     </Reference>
-    <Reference Include="DevExpress.Sparkline.v13.1.Core, Version=13.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+    <Reference Include="DevExpress.PivotGrid.v18.2.Core, Version=18.2.10.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
     </Reference>
-    <Reference Include="DevExpress.XtraReports.v13.1, Version=13.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+    <Reference Include="DevExpress.XtraPrinting.v18.2, Version=18.2.10.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
     </Reference>
-    <Reference Include="DevExpress.XtraReports.v13.1.Extensions, Version=13.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+    <Reference Include="DevExpress.Sparkline.v18.2.Core, Version=18.2.10.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
     </Reference>
-    <Reference Include="DevExpress.XtraReports.v13.1.Web, Version=13.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+    <Reference Include="DevExpress.CodeParser.v18.2, Version=18.2.10.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
     </Reference>
-    <Reference Include="DevExpress.XtraTreeList.v13.1, Version=13.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraReports.v18.2, Version=18.2.10.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+    </Reference>
+    <Reference Include="DevExpress.XtraReports.v18.2.Extensions, Version=18.2.10.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+    </Reference>
+    <Reference Include="DevExpress.Web.Resources.v18.2, Version=18.2.10.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+    </Reference>
+    <Reference Include="DevExpress.XtraReports.v18.2.Web.WebForms, Version=18.2.10.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+    </Reference>
+    <Reference Include="DevExpress.XtraReports.v18.2.Web, Version=18.2.10.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+    </Reference>
+    <Reference Include="DevExpress.XtraTreeList.v18.2, Version=18.2.10.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
     <Reference Include="System" />
     <Reference Include="System.Core, Version=3.5.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
-      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+      <SpecificVersion>False</SpecificVersion>
     </Reference>
     <Reference Include="System.Data" />
     <Reference Include="System.Data.DataSetExtensions" />
@@ -169,10 +195,12 @@
           <AutoAssignPort>True</AutoAssignPort>
           <DevelopmentServerPort>51712</DevelopmentServerPort>
           <DevelopmentServerVPath>/</DevelopmentServerVPath>
-          <IISUrl></IISUrl>
+          <IISUrl>
+          </IISUrl>
           <NTLMAuthentication>False</NTLMAuthentication>
           <UseCustomServer>False</UseCustomServer>
-          <CustomServerUrl></CustomServerUrl>
+          <CustomServerUrl>
+          </CustomServerUrl>
           <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
         </WebProjectProperties>
       </FlavorProperties>
