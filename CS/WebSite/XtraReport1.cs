@@ -9,14 +9,5 @@ namespace WebApplication1 {
         public XtraReport1() {
             InitializeComponent();
         }
-
-        private void xrLabel1_HtmlItemCreated(object sender, HtmlEventArgs e)
-        {
-        }
-
-        private void xrPivotGrid1_BeforePrint(object sender, System.Drawing.Printing.PrintEventArgs e) {
-            xrPivotGrid1.BestFit();
-        }
-
     }
 }
